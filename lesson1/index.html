@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lesson1</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>         
+    <script src="script.js"></script>
+    <script type="text/javascript" src="books.json"></script>
+
+    
+</head>
+<body>
+    <div class="container">
+
+       
+        <div class="row">
+            <div class="col s3"><input id="1" type="search" placeholder="search by number"><button onclick="searchbbbyid()">search</button></div>
+            <div class="col s3"><input id="2" type="search" placeholder="search by author"><button onclick="searchbbbyauthor()">search</button></div>
+            <div class="col s3"><input id="3" type="search" placeholder="search by name"><button onclick="searchbbbyname()">search</button></div>
+            <div class="col s3"><input id="4" type="search" placeholder="search by date"><button onclick="searchbbbydate()">search</button></div>
+        </div>
+        <ul>
+            <li class="">Уникалььный номер книги: №{{uniqnumber}}</li>
+            <li class="">Автор: {{author}}</li>
+            <li class="">Название книги: {{name}}</li>
+            <li class="">Написана: {{date}}</li>
+        </ul>
+    </div>
+    
+
+</body>
+</html>
